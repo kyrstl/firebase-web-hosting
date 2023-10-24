@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Game</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffebf0; /* Default light pink background color */
+    }
+    header {
+        background-color: rgba(255, 102, 163, 0.7); /* Semi-transparent pink header */
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the header */
+    }
+
+    h1 {
+            font-size: 36px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* Tabbed navigation styles */
+    .tabs {
+        display: flex;
+        justify-content: center;
+        background-color: #fff; /* White background for the navigation bar */
+        padding: 10px 0;
+    }
+
+    .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        color: #ff66a3; /* Pink text color */
+    }
+
+    .tab:hover {
+        background-color: #ffebf0; /* Lighter pink on hover */
+    }
+
+    /* Define a background pattern for light purple with thicker horizontal lines */
+    .light-purple-background {
+        background: repeating-linear-gradient(to bottom, rgba(112, 48, 160, 0.7), rgba(112, 48, 160, 0.7) 20px, transparent 20px, transparent 40px);
+        background-color: #d9b3ff; /* Light Purple */
+    }
+
+    .tabs a.tab {
+        text-decoration: none; /* Remove the underline */
+    }
+</style>
+<body>
+    <div class="tabs">
+        <a class="tab" href="index.html">Home Page</a><!--HOW-->
+    </div>
+    <header>
+        <h1>Welcome to the Game Page</h1>
+    </header>
+    <div class="container">
+        <h4>This is a game.</h4>
+    </div>
+
+    <canvas id="gameCanvas" width="600" height="800"></canvas>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
